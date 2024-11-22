@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0 1.25rem;
+}
+
+header {
+   
+    background-color: #3498db;
+    padding: 1rem 0;
+    margin-bottom: 1.25rem;
+    display: flex;
+    justify-content: center;  
+    align-items: center;   
+   
+}
+
+
+.logo img {
+    max-width: 5rem; 
+    height: auto;
+    border-radius: 0.625rem;
+      
+}
+
+.navbar nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    margin: 0 1rem;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 0.75rem;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    background-color: #110eeb;
+    border-radius: 0.3125rem;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1.875rem 0;
+    color: #2c3e50;
+}
+
+.gastronomia {
+    margin: 2.5rem auto;
+    padding: 1.5625rem;
+    max-width: 68.75rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.gastronomia h2 {
+    font-size: 2.2rem;
+    color: #3498db;
+    margin-bottom: 0.9375rem;
+}
+
+.gastronomia p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.25rem;
+    text-align: justify;
+}
+
+.gastronomia img {
+    width: 100%;
+    max-width: 35rem;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-top: 1.25rem;
+    border-radius: 0.25rem;
+}
+
+@media (max-width: 48rem) {
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar nav ul li {
+        margin: 1rem 0;
+    }
+
+    #titulo {
+        font-size: 2.2rem;
+    }
+
+    .gastronomia {
+        margin: 1.25rem;
+        padding: 1rem;
+    }
+
+    .gastronomia h2 {
+        font-size: 1.8rem;
+    }
+
+    .gastronomia p {
+        font-size: 1rem;
+    }
+}
